@@ -91,10 +91,9 @@
         font-size: 40px;
     }
 
-    .bloque1, .bloque2, .bloque3{
-        padding: 0px;
-        margin: 0px;
-        display: flex;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .contenedor--temas1{
