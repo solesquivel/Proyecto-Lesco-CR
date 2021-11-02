@@ -1,67 +1,148 @@
-*{
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    }
 
-.nav{
-display: flex;
-justify-content: right;
-}
-
-.nav-link{
-    color: black;
-    text-decoration: none;
-}
-
-.nav-menu{
-    display: flexbox;
-    margin-right: 20px;
-    list-style: none;
-}
-
-body{
+    body{
     background-color: #fad7b4;
-}
+    }
 
-main{
+    main{
     background-color: #fad7b4;
-}
+    }
 
-header{
+    header{
     width: 100%;
     height: 140px;
     background-color:  #7292ba ; 
-}
+    }
 
-h1{
+
+    /*Contenedor del menu*/
+    .menu--container{
+    width: 180px;
+    margin: 0px 1400px;
+    }
+    /*Borde del menu*/
+    .menu--container .cont-enlace{
+    box-shadow: 0px 0px 10px 5px #1a567e;
+    }
+
+    /* Estilo para el menu */
+    .menu--container .cont-enlace .menu{
+    display:  ruby;
+    background-color: black;    
+    text-align: left;
+    color: white;
+    padding: 13px 15px;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    }
+
+    /* Efecto para aparacer y desaparecer enlaces */
+    .menu--container .cont-enlace .enlace{
+    height: 0;
+    overflow: scroll;
+    }
+
+    .menu--container .cont-enlace .animation{
+    height: 458%;
+    }
+
+    /* Estilos para los temas */
+    .menu--container .cont-enlace .enlace a{
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    }
+
+    .menu--container .cont-enlace .enlace a:hover{
+    background-color: #1a567e;
+    color: white;
+    }
+
+    h1{
     font-size: 100px;
     padding: 30px 150px;
     line-height: 80px;
     text-decoration: underline;
     font-weight: bold;
     position: static;
-}
+    }
 
-img{
-    width: 140px;
-    width: 140px;
-    border-radius: 20px;
-    float: left;
-    margin:0;
-    padding: 10px;
+    h2{
+        font-size: 70px;
+        padding: 0px 100px;
+        text-decoration: none;
+        text-align: center;
+    } 
 
-}
+    h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    p{
+        font-size: 40px;
+    }
 
-/*
-footer{
+    .bloque1, .bloque2, .bloque3{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+    }
+
+    .contenedor--temas1{
+    width: 500px;
+    margin: 5px 100px;
+    height: 150px;
+    background: #FFFF99;
+    border: black;
+    border-bottom: black;
+    }
+
+    .contenedor--temas2{
+        width: 500px;
+        margin: 5px 100px;
+        height: 150px;
+        background: #b3fadb;
+    }
+
+    .contenedor--temas3{
+        width: 500px;
+        margin: 5px 100px;
+        height: 150px;
+        background: #fb8384;
+    }
+
+    .contenedor--temas4{
+        width: 500px;
+        margin: 5px 100px;
+        height: 150px;
+        background: #ccbde4;
+    }
+
+    img{
+        width: 140px;
+        width: 140px;
+        border-radius: 20px;
+        float: left;
+        margin:0;
+        padding: 10px;
+    }
+
+    footer{
     width: 100%;
     height: 20%;
     background-color:  #7292ba ;
     border-radius: 3%;
-}
-*/
+    }
 
 
-/*Responsive*/
 
+    /*Responsive*/
