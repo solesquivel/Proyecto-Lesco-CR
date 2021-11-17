@@ -5,144 +5,267 @@
     }
 
     body{
-    background-color: #fad7b4;
+    background-color: #7292ba ; 
+    padding: 0%;
+    margin: 0%;
     }
+
+    #miCarrusel{
+        margin-top: 10%;
+        margin-left: 29%;
+          width: 45%;
+          height: 25%;
+      }
 
     main{
     background-color: #fad7b4;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height:170%;
     }
 
     header{
     width: 100%;
-    height: 140px;
+    height: 11%;
     background-color:  #7292ba ; 
+    display: flex;
     }
-
-
-    /*Contenedor del menu*/
-    .menu--container{
-    width: 180px;
-    margin: 0px 1400px;
+    
+    ul, ol {
+        list-style:none;
     }
-    /*Borde del menu*/
-    .menu--container .cont-enlace{
-    box-shadow: 0px 0px 10px 5px #1a567e;
+    
+    .nav > li {
+        float:right;
+        margin-right: 8%;
+        padding: 2%;
     }
-
-    /* Estilo para el menu */
-    .menu--container .cont-enlace .menu{
-    display:  ruby;
-    background-color: black;    
-    text-align: left;
-    color: white;
-    padding: 13px 15px;
-    font-size: 30px;
-    cursor: pointer;
-    user-select: none;
+    
+    .nav li a {
+        background-color:#000;
+        color:#fff;
+        text-decoration:none;
+        padding:18px;
+        display:block;
     }
-
-    /* Efecto para aparacer y desaparecer enlaces */
-    .menu--container .cont-enlace .enlace{
-    height: 0;
-    overflow: scroll;
+    
+    .nav li a:hover {
+        background-color:cadetblue;
     }
-
-    .menu--container .cont-enlace .animation{
-    height: 458%;
+    
+    .nav li ul {
+        display:none;
+        position:absolute;
+        min-width:140px;
     }
-
-    /* Estilos para los temas */
-    .menu--container .cont-enlace .enlace a{
-    display: block;
-    padding: 15px 15px;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    background-color: white;
+    
+    .nav li:hover > ul {
+        display:block;
     }
-
-    .menu--container .cont-enlace .enlace a:hover{
-    background-color: #1a567e;
-    color: white;
+    
+    .nav li ul li {
+        position:relative;
     }
+    
+    .nav li ul li ul {
+        right:-140px;
+        top:0px;
+    }
+    
 
     h1{
-    font-size: 100px;
-    padding: 30px 150px;
-    line-height: 80px;
-    text-decoration: underline;
-    font-weight: bold;
-    position: static;
+        font-size: 700% ;
+        padding: 2% 9% ;
+        line-height: 55% ;
+        text-decoration: underline ;
+        position: static ;
+        color: black ;
+    } 
+    .titulo--container{
+        width: 900px;
+        /* padding: 2% 9% ; */
+        display: flex;
+        margin: 10px auto;
+        height: 100%;
+        
+    }
+
+    .titulo--container h1{
+        font-size: 60px ;
+        
+        line-height: 55% ;
+        text-decoration: none;
+        color: black ;
     }
 
     h2{
-        font-size: 70px;
-        padding: 0px 100px;
+        font-size: 500%;
+        padding: 0% 10%;
         text-decoration: none;
         text-align: center;
+        color: black;
     } 
 
     h3{
-        font-size: 25px;
-        text-align: center;
+        font-size: 200% ;
+        text-align: center ;
+        color: black;
     }
     
+    a{
+        font-size: 200% ;
+        text-decoration: none ;
+        color: black ;
+        text-align: center ;
+        padding-top: 28% ;
+        margin: 2%;
+    }
     p{
-        font-size: 40px;
+        font-size: 200% ;
+        text-decoration: none ;
+        color: black ;
+        text-align: center ;
+        padding-top: 200% ;
     }
 
+  
+
     .bloque1, .bloque2, .bloque3{
-        padding: 0px;
-        margin: 0px;
+        padding: 1%;
+        height: 13%;
         display: flex;
     }
 
+    
+
+    .autor{
+        display: flex;
+        width: 100%;
+        height: 60%;
+    }
+
+    .texto{
+        align-self: center;
+        margin: 10%;
+        text-align: center;
+        font-size: 150%;
+        border: 12px dotted black;
+        padding: 2%;
+    }
+
     .contenedor--temas1{
-    width: 500px;
-    margin: 5px 100px;
-    height: 150px;
+    display: grid;
+    width: 37%;
+    margin: 2% 6%;
+    height: 83%;
     background: #FFFF99;
-    border: black;
-    border-bottom: black;
+    border-color: black;
+    border-width: 10%;
+    border-style: solid;
     }
 
     .contenedor--temas2{
-        width: 500px;
-        margin: 5px 100px;
-        height: 150px;
+        display: grid;
+        width: 37%;
+        margin: 2% 6%;
+        height: 83%;
         background: #b3fadb;
+        border-color: black;
+        border-width: 10%;
+        border-style: solid;
     }
 
     .contenedor--temas3{
-        width: 500px;
-        margin: 5px 100px;
-        height: 150px;
+        display: grid;
+        width: 37%;
+        margin: 2% 6%;
+        height: 83%;
         background: #fb8384;
+        border-color: black;
+        border-width: 10%;
+        border-style: solid;
     }
 
     .contenedor--temas4{
-        width: 500px;
-        margin: 5px 100px;
-        height: 150px;
+        display: grid;
+        width: 37%;
+        margin: 2% 6%;
+        height: 83%;
         background: #ccbde4;
+        border-color: black;
+        border-width: 10%;
+        border-style: solid;
     }
 
-    img{
-        width: 140px;
-        width: 140px;
-        border-radius: 20px;
+    .img{
+        width: 350px;
+        height: 250px;
+        border-radius: 0%;
         float: left;
-        margin:0;
-        padding: 10px;
+        margin:0  ;
+        padding: 1%;
+    }
+
+    .img img {
+        width: 150px;
+        height: auto;
+    }
+
+    .tabla-datos{
+    height: 70%;
+    width: 90%;
+    margin-left: 5%;
+    }
+    .tabla-datos img{
+        width: 100%;
+        height: 100%;
+        margin: 3%;
+        padding: 3%;
+    }
+
+    
+
+    .informacion{
+        width: 30%;
+        height: 80%;
+        margin: 5%;
+        margin-left: 7%;
+        font-size: 100%;
+        padding: 5%;
+        background: cadetblue;
+        border: black solid 5px;
+    }
+
+    .formulario{
+        width: 50%;
+        height:20%;
+        padding: 2%;
+        font-size: 200%;
+        margin: 2%;
+        background-color: #ccbde4;
+        border: black solid 5px;
+    }
+
+    .titu{
+        font-size: 700% ;
+        padding: 2% 9% ;
+        line-height: 55% ;
+        text-decoration: underline ;
+        position: static ;
+        color: black ;
     }
 
     footer{
     width: 100%;
-    height: 20%;
-    background-color:  #7292ba ;
-    border-radius: 3%;
+    height: 15%;
+    background-color:#7292ba;
+    text-align: center;
+    text-decoration: none;
+    padding: 5%;
+    margin: 0%;
     }
 
 
 
-    /*Responsive*/
+
