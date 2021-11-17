@@ -30,6 +30,7 @@
     height: 11%;
     background-color:  #7292ba ; 
     display: flex;
+    margin-right: 1000px;
     }
     
     ul, ol {
@@ -83,17 +84,15 @@
         color: black ;
     } 
     .titulo--container{
-        width: 900px;
-        /* padding: 2% 9% ; */
+        width: 300%;
         display: flex;
-        margin: 10px auto;
+        margin: 1% auto;
         height: 100%;
         
     }
 
     .titulo--container h1{
-        font-size: 60px ;
-        
+        font-size: 500% ;
         line-height: 55% ;
         text-decoration: none;
         color: black ;
@@ -199,16 +198,14 @@
     }
 
     .img{
-        width: 350px;
-        height: 250px;
-        border-radius: 0%;
+        width: 40%;
+        height: auto;
         float: left;
-        margin:0  ;
-        padding: 1%;
+        padding: 0.4%;
     }
 
     .img img {
-        width: 150px;
+        width: 100%;
         height: auto;
     }
 
