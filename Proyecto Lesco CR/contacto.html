@@ -5,46 +5,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lesco Costarricense</title>
         <link rel="stylesheet" type="text/css" href="CSS/estilo.css"/>
+        <script src="JS/calculaEdad.js"></script>
     </head>
 
     <body>
         <header>
             
-            <div>
+            
 
-                <div class="img">
-
-                    <img style="border-radius: 20%;" src="logo.png">
-    
-                </div>
-    
-                <div id="header">
-                    <ul class="nav">
-                        <li><a href="">Menu</a>
-                            <ul>
-                                <li><a href="autor.html">Autor</a></li>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="galeria.html">Galeria</a></li>
-                                <li><a href="delSitio.html">Acerca del sitio</a></li>  
-                                <li><a href="historia.html">Historia</a></li>
-                                <li><a href="general.html">General</a></li>
-                                <li><a href="contacto.html">Contacto</a></li>
-                                <li><a href="">Ubicacion</a></li>  
-                                <li><a href="">Clases Avanzadas</a></li>                              </li>
-                            </ul>
-                        </li>
-                </div>
-
-                <div class="titulo--container">
-    
-                    <h1>Lesco Costarricense</h1>
-     
-                </div>                
+            <div class="img">
+                <img  src="logo.png">
             </div>
 
-        </header>
+            <div class="titulo--container">
 
-        <main style="height: 68%;">
+                <h1>Lesco Costarricense</h1>
+ 
+            </div> 
+
+            <div id="header" class="altura">
+                <ul class="nav">
+                    <li><a href="">Menu</a>
+                        <ul>
+                            <li><a href="autor.html">Autor</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="delSitio.html">Acerca del sitio</a></li>  
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="general.html">General</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="">Ubicacion</a></li>  
+                            <li><a href="">Clases Avanzadas</a></li>     </li>
+                        </ul>
+                    </li>
+            </div>
+
+                           
+        
+
+    </header>
+
+
+        <main style="height: auto;">
           <h2>Contacto</H2>  
           <h3>Aprender esta en tus manos</h3>
 
@@ -63,65 +65,67 @@
                 <form enctype="text/plain" action="mailto:solesquivel2430@gmail.com" method="post">
                     <div class="form-group">
                       <label style="font-weight: bold;" for="exampleInputEmail1">Email</label>
-                      <input style="font-size: 100%;" type="email" class="form-control" id="exampleInputEmail1"  placeholder="email@gmail.com">
+                      <input style="font-size: 100%;" type="email"  name="Email" placeholder="email@gmail.com"/>
                        
                           <div>
                             <label style="font-weight: bold;" for="exampleInputEmail1">Nombre</label>
-                            <input style="font-size: 100%;" type="text" class="form-control" placeholder="Ana">
+                            <input style="font-size: 100%;" type="text" name="Nombre" placeholder="Ana"/>
                           </div>
                           <div>
                             <label style="font-weight: bold;" for="exampleInputEmail1">Apellido</label>
-                            <input style="font-size: 100%;" type="text" class="form-control" placeholder="Vindas">
+                            <input style="font-size: 100%;" type="text" name="Apellido" placeholder="Vindas"/>
                           </div>
                           <div >
                             <label style="font-weight: bold;" for="exampleInputEmail1">Apellido</label>
-                            <input style="font-size: 100%;" type="text" class="form-control" placeholder="Abarca">
+                            <input style="font-size: 100%;" type="text" name="Apellido" placeholder="Abarca"/>
                           </div>
                           <div>
                             <label style="font-weight: bold;" for="start">Fecha de nacimiento</label>
-                            <input style="font-size: 100%;" type="date" id="start" name="fecha de nacimiento"
+                            <input style="font-size: 100%;" type="date" id="nacimiento" name="fecha de nacimiento"
                             value="2018-07-22"
-                            min="1960-01-01" max="2020-12-31">    
+                            min="1960-01-01" max="2020-12-31"/>   
                           </div>
                         <div>
                             <label style="font-weight: bold;" for="start">Genero</label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio1">Femenino</label>
+                                <input type="radio"  class="custom-control-input" name="Femenino" value="Femenino"/>
+                                <label  for="customRadio1">Femenino</label>
                               </div>
-                              <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Masculino</label>
+                              <div class="custom-control custom-radio" >
+                                <input type="radio"  class="custom-control-input" name="Masculino" value="Masculino"/>
+                                <label  for="customRadio2">Masculino</label>
                               </div>
     
                         </div>
                         <div>
-                            <label style="font-weight: bold;" for="start">Grado Academico</label>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Primaria completa</label>
+                            <label style="font-weight: bold;">Grado Academico</label>
+                            <div>
+                                <input type="checkbox" value="Primaria Completa" name="Primaria Completa"/>
+                                <label for="customCheck1">Primaria completa</label>
                             </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Secundaria completa</label>
+                            <div>
+                                <input type="checkbox" value="Secundaria Completa" name="Secundaria Completa"/>
+                                <label  for="customCheck1">Secundaria completa</label>
                             </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Tecnico completo</label>
+                            <div>
+                                <input type="checkbox" value="Tecnico Completo" name="Tecnico Completo" />
+                                <label for="customCheck1">Tecnico completo</label>
                             </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Bachiller</label>
+                            <div>
+                                <input type="checkbox" value="Bachiller" name="Bachiller"/>
+                                <label  for="customCheck1">Bachiller</label>
                             </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Grado universitario</label>
+                            <div>
+                                <input type="checkbox" value="Grado Universitario" name="Grado Universitario"/>
+                                <label for="customCheck1">Grado universitario</label>
                             </div>
 
                         </div>
 
                     </div>
-                    <button style="font-size: 100%; font-weight: bold; padding: 1%; background-color: rgb(174, 235, 230);" type="submit" value="send" class="btn btn-primary">Enviar</button>
+                    <div style="display: none;"  ><input name="Edad" id="edad"/></div>
+
+                    <button onclick="calculaEdad()"  id="boton"style="font-size: 100%; font-weight: bold; padding: 1%; background-color: rgb(174, 235, 230);" type="submit" value="send" class="btn btn-primary btn-lg" >Enviar</button>
                 </form>
             </div>
 

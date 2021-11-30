@@ -1,0 +1,245 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesco Costarricense</title>
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css"/>
+    </head>
+
+    <body>
+        <header>
+            
+            
+
+            <div class="img">
+                <img  src="logo.png">
+            </div>
+
+            <div class="titulo--container">
+
+                <h1>Lesco Costarricense</h1>
+ 
+            </div> 
+
+            <div id="header" class="altura">
+                <ul class="nav">
+                    <li><a href="">Menu</a>
+                        <ul>
+                            <li><a href="autor.html">Autor</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="delSitio.html">Acerca del sitio</a></li>  
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="general.html">General</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="">Ubicacion</a></li>  
+                            <li><a href="">Clases Avanzadas</a></li>                              </li>
+                        </ul>
+                    </li>
+            </div>
+
+    </header>
+
+
+        <main style="height:auto;">
+          <h2>Ubicación</H2>  
+          <h3>Aprender esta en tus manos</h3>
+
+
+
+          <div class="zona">
+            <aside>
+                <button id="zona">Zona Horaria </button>
+                <table id="CR" border="1px">
+                  <thead style="margin-right: 2%;">
+                    <th>Fecha y Hora</th>
+          
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </aside>
+          </div>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script id="api">
+            $(document).ready(() => {
+              $("#zona").click(function () {
+                $.ajax({
+                  url: "http://api.timezonedb.com/v2.1/get-time-zone?key=ZDOVSVGG2D41&format=json&by=position&lat=9.748917&lng=-83.753428",
+                  type: "GET",
+                  dataType: "json",
+                  success: function (data) {
+                    datos = data;
+      
+                    let fila = $("<tr>");
+                    fila.append($(`<td>${datos.formatted}</td>`));
+                    $("#CR tbody").append(fila);
+      
+                    console.log(datos.status);
+                  },
+                });
+              });
+            });
+          </script>
+
+
+
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSjTc5ZKo_8P6ErbQyBFC7gahm0MOM_wY&callback=initMap&libraries=&v=weekly"
+            defer
+          ></script>
+          <style>
+          /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+             #map {
+               height: 500px;
+               width: 800px;
+               border-radius: 15px;
+               margin: 100px auto;
+               max-width: 100%;
+             }
+            /* Optional: Makes the sample page fill the window. */
+            html,
+            body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+              align-items: center;
+              justify-content: center;
+            }
+          </style>
+          <!-- jsFiddle will insert css and js -->
+        </head>
+        <body>
+          <div id="map"></div>
+      
+          <script>
+          let map;
+      
+          function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+              center: { lat:9.982709,   lng: -84.025919 },
+              zoom: 8,
+            });
+          }
+          </script>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSjTc5ZKo_8P6ErbQyBFC7gahm0MOM_wY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+     #map {
+       height: 500px;
+       width: 800px;
+       border-radius: 15px;
+       margin: 100px auto;
+       max-width: 100%;
+     }
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <!-- jsFiddle will insert css and js -->
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of marker
+        const coords = { lat:9.982709,   lng: -84.025919 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 16,
+          center: coords,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: coords,
+          map: map,
+        });
+      }
+    </script>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSjTc5ZKo_8P6ErbQyBFC7gahm0MOM_wY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css"> 
+      #map {
+        height: 900px;
+        width: 1200px;
+        border-radius: 15px;
+        margin: 100px auto;
+        max-width: 100%;
+      }
+    </style>
+    <script>
+      // inicia la Configuración
+      function initMap() {
+        const directionsRenderer = new google.maps.DirectionsRenderer();
+        const directionsService = new google.maps.DirectionsService();
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: { lat:9.982709,   lng: -84.025919 },
+        });
+        directionsRenderer.setMap(map);
+        calculateAndDisplayRoute(directionsService, directionsRenderer);
+      }
+
+      function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+
+        directionsService.route(
+          {
+            origin: { lat: 9.962076,   lng: -84.049182 },
+            destination: { lat:9.982709,   lng: -84.025919 },
+            // tambien se puede usar de otro modo WALKING - BICYCLING - TRANSIT
+            travelMode: google.maps.TravelMode["DRIVING"],
+          },
+          (response, status) => {
+            if (status == "OK") {
+              directionsRenderer.setDirections(response);
+            } else {
+              window.alert("Directions request failed due to " + status);
+            }
+          }
+        );
+      }
+    </script>
+
+
+        </main>
+
+        <footer>
+            <a href="autor.html">Autor</a>
+            <a href="index.html">Home</a>
+            <a href="galeria.html">Galería</a>
+            <a href="delSitio.html">Acerca del sitio</a>
+            <a href="historia.html">Historia</a>
+            <a href="general.html">General</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="">Ubicacion</a>
+                <h3 style="padding: 3%;">© 2021 Sol Esquivel Campos </h3>
+        </footer>
+        
+    </body>
+    
+</html>
